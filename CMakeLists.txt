@@ -1,9 +1,10 @@
 cmake_minimum_required(VERSION 3.20)
 
-project(HelloWorld)
+project(StudentManagementSystem)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(HelloWorld
+add_executable(StudentManagementSystem
     main.cpp
+    Student.cpp
 )
