@@ -5,6 +5,6 @@ int main(){
 
     cout << "Hello World";
     cout << "Learning Git and C++";
-    int x = 4+5;
-
+    cout << "4 + 5 = " << 4 + 5 << endl; 
+    cout << "Feature branch";
 }
