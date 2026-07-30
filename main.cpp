@@ -5,6 +5,7 @@ int main(){
 
     cout << "Hello World";
     cout << "Learning Git and C++";
-    int x = 4+5;
-
+    cout << "This is math baby";
+    cout << "Added 1 more line";
+    cout << "I am on the feature branch!" << endl;
 }
