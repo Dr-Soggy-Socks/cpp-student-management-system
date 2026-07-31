@@ -17,9 +17,7 @@ class Student{
     Student() : name("Unknown"), studentNumber(-1), averageMark(-1) {}
 
     //Destructor
-    ~Student(){
-        cout << "Student: " << name << " was removed from the data base.";
-    }
+    ~Student(){}
 
     //Setters
     void setName(string name);

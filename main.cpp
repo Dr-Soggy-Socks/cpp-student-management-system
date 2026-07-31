@@ -4,9 +4,10 @@
 #include "Student.h"
 using namespace std;
 
-void printAllCode(const vector<Student>& students){
+void printAllStudents(const vector<Student>& students){
     for(int i  = 0; i < size(students); i++){
         students[i].display();
+        cout << '\n';
     }
 }
 
@@ -15,8 +16,8 @@ int main(){
     string name;
     int studentNumber;
     double averageNumber;
-    int i = 0;
     char printAll;
+    Student temp;
     
 
     while(true){
@@ -31,10 +32,21 @@ int main(){
         cout << "Enter Average Mark: ";
         cin >> averageNumber;
 
-        students[i].setName(name);
-        students[i].setStudentNumber(studentNumber);
-        students[i].setAverageMark(averageNumber);
+        temp.setName(name);
+        temp.setStudentNumber(studentNumber);
+        temp.setAverageMark(averageNumber);
+
+        students.push_back(temp);
     }
 
-    cout << "Print all the student: ";
+    cout << "Print all the student [Y/N]: ";
+    cin >> printAll;
+    cout << '\n';
+    printAll = toupper(printAll);
+    if(printAll == 'Y'){
+        printAllStudents(students);
+        cout << '\n';
+    }else{
+        cout << "Goodbye";
+    }
 }
