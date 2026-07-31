@@ -25,6 +25,14 @@ class Student{
     void setName(string name);
     void setStudentNumber(int studentNumber);
     void setAverageMark(double averageMark);
+
+    //Getting
+    string getName();
+    int getStudentNumber();
+    double getAverageMark();
+
+    //Displayers
+    void display();
 };
 
 
