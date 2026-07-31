@@ -11,6 +11,19 @@ void printAllStudents(const vector<Student>& students){
     }
 }
 
+void sortByGrade(vector<Student>& students){
+    Student temp;
+    for(int i = 0; i < size(students) - 1; i++){
+        for(int j = 0; j < size(students) - i - 1; j++){
+            if(students[j].getAverageMark() > students[j + 1].getAverageMark()){
+                temp = students[j];
+                students[j] = students[j + 1];
+                students[j + 1] = temp;
+            }
+        }
+    }
+}
+
 int main(){
     vector<Student> students;
     string name;
@@ -18,7 +31,7 @@ int main(){
     double averageNumber;
     char printAll;
     Student temp;
-    
+    char sort;
 
     while(true){
         cout << "Enter name or quit/Quit to stop adding students: ";
@@ -46,7 +59,15 @@ int main(){
     if(printAll == 'Y'){
         printAllStudents(students);
         cout << '\n';
-    }else{
-        cout << "Goodbye";
     }
+
+    cout << "Sort the student data by average marks[Y/N]: ";
+    cin >> sort;
+    cout << '\n';
+    printAll = toupper(sort);
+
+    if(sort == 'Y'){
+        sortByGrade(students);
+    }
+
 }
