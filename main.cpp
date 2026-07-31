@@ -68,6 +68,10 @@ int main(){
 
     if(sort == 'Y'){
         sortByGrade(students);
+        cout << "The highest achiever: " << students[0].getName() << '\n' ;
+        cout << "Goodbye";
     }
+
+
 
 }
