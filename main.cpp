@@ -1,19 +1,38 @@
 #include <iostream>
 #include <string>
+#include <vector>
 #include "Student.h"
 using namespace std;
 
-int main(){
-    Student sibahle("Sibahle", 1, 80.0);
-    Student tlhompo("Tlhompo", 2, 60.0);
-    Student alice("Alice", 3, 78.6);
-    Student bob;
+void printAllCode(const vector<Student>& students){
 
-    sibahle.display();
-    cout << '\n';
-    tlhompo.display();
-    cout << '\n';
-    alice.display();
-    cout << '\n';
-    bob.display();
+}
+
+int main(){
+    vector<Student> students;
+    string name;
+    int studentNumber;
+    double averageNumber;
+    int i = 0;
+    char printAll;
+    
+
+    while(true){
+        cout << "Enter name or quit/Quit to stop adding students: ";
+        cin >> name;
+        if(name == "quit" || name == "Quit"){
+            cout << "All students have been entered." << '\n';
+            break;
+        }
+        cout << "Enter Student Number: ";
+        cin >> studentNumber;
+        cout << "Enter Average Mark: ";
+        cin >> averageNumber;
+
+        students[i].setName(name);
+        students[i].setStudentNumber(studentNumber);
+        students[i].setAverageMark(averageNumber);
+    }
+
+    cout << "Print all the student: ";
 }
