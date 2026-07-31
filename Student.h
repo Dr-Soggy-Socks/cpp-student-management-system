@@ -27,15 +27,11 @@ class Student{
     void setAverageMark(double averageMark);
 
     //Getting
-    string getName();
-    int getStudentNumber();
-    double getAverageMark();
+    string getName() const;
+    int getStudentNumber() const;
+    double getAverageMark() const;
 
     //Displayers
-    void display();
+    void display() const;
 };
-
-
-
-
 #endif /* STUDENT */

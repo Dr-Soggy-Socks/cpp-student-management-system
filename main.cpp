@@ -5,7 +5,9 @@
 using namespace std;
 
 void printAllCode(const vector<Student>& students){
-
+    for(int i  = 0; i < size(students); i++){
+        students[i].display();
+    }
 }
 
 int main(){

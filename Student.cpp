@@ -19,20 +19,19 @@
     }
 
     //Getting
-    string Student::getName(){
+    string Student::getName() const{
         return name;
     }
-    int Student::getStudentNumber(){
+    int Student::getStudentNumber() const{
         return studentNumber;
     }
-    double Student::getAverageMark(){
+    double Student::getAverageMark() const{
         return averageMark;
     }
 
     //Displayers
-    void Student::display(){
+    void Student::display() const{
         cout << "Student Name: " << getName() << '\n';
         cout << "Student Number: " << getStudentNumber() << '\n';
         cout << "Average Mark: " << getAverageMark() << '\n';
     }
-    //Checking if I can pull
