@@ -71,7 +71,4 @@ int main(){
         cout << "The highest achiever: " << students[0].getName() << '\n' ;
         cout << "Goodbye";
     }
-
-
-
 }
