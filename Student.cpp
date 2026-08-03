@@ -35,3 +35,4 @@
         cout << "Student Number: " << getStudentNumber() << '\n';
         cout << "Average Mark: " << getAverageMark() << '\n';
     }
+    //Add this line
